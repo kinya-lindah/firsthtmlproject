@@ -10,10 +10,18 @@
     .item4 {grid-area: right;}
     .item5 {grid-area: footer;}
     .grid-container {display: grid; 
-      grid-template-areas: 'header header header header'
+     grid-template-areas: 'header header header header'
         'menu main main right'
         'footer footer footer footer'; grid-gap: 0px; background-color:Silver; padding:1px;}
     .grid-container > div{text-align:center; }
+    .recommendationsbtn{ border: None; cursor: pointer; background-color:silver}
+    .recommendationsdown{position: relative;display: inline-block;}
+    .recommendationsdown-content {display: none;position: absolute; min-width: 100px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); }
+    .recommendationsdown-content a {font-size:11px; text-align: left;color: MidnightBlue; padding: 12px 16px; text-decoration: none; display: block;}
+    .recommendationsdown-content a:hover{color: Indigo}
+    .recommendationsdown:hover	.recommendationsdown-content{display:block}
+    .recommendationsdown:hover	.recommendationsbtn{background-color:white;}
+    
     body {background-image: linear-gradient(to right,CornflowerBlue, #2E0B2A)  ;font-family: Helvetica, Verdana, sans-serif;color:MidnightBlue }
     table{width:50%; }
     th {border: 2px solid black; text-align: left; background-color:Silver}
@@ -23,13 +31,6 @@
     A:visited {color: RoyalBlue; text-decoration: none; font-weight: normal }
     A:active {color: black; text-decoration: none }
     A:hover {color: blue; text-decoration: none; font-weight: none }
-    .recommendationsbtn{ border: None; cursor: pointer; background-color:silver}
-    .recommendationsdown{position: relative;display: inline-block;}
-    .recommendationsdown-content {display: none;position: absolute; min-width: 100px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); }
-    .recommendationsdown-content a {font-size:11px; text-align: left;color: MidnightBlue; padding: 12px 16px; text-decoration: none; display: block;}
-    .recommendationsdown-content a:hover{color: Indigo}
-    .recommendationsdown:hover	.recommendationsdown-content{display:block}
-    .recommendationsdown:hover	.recommendationsbtn{background-color:white;}
     img {width:100px;height:130px;}
     article{display: inline-block;}
          
